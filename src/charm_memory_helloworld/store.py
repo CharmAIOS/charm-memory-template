@@ -1,6 +1,6 @@
 from typing import Any, Dict, List
 from charm.core.storage import BaseMemoryStore
-from charm.logger import logger
+from charm.core.logger import logger
 
 class HelloWorldMemoryStore(BaseMemoryStore):
     """
