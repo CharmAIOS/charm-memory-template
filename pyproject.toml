@@ -1,0 +1,18 @@
+[project]
+name = "charm-memory-helloworld"
+version = "0.1.0"
+description = "A starter template for building custom Memory & State providers for Charm"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+dependencies = [
+    "charmos"
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.entry-points."charm.memory"]
+helloworld = "charm_memory_helloworld.store:HelloWorldMemoryStore"
